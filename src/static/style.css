@@ -1,21 +1,41 @@
+/* General Styles */
 body {
-    font-family: 'Arial', sans-serif;
-    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    font-family: 'Poppins', sans-serif;
+    background: #f4f4f4;
+    color: #333;
     text-align: center;
-    padding: 50px;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #3a506b, #5bc0be);
+    padding: 20px;
     color: white;
-    animation: fadeIn 2s ease-in;
+    border-radius: 10px;
 }
 
-h1 {
-    font-size: 3em;
-    margin-bottom: 10px;
-    animation: slideIn 1.5s ease-out;
+/* Navigation */
+nav ul {
+    list-style: none;
+    padding: 0;
 }
 
-p {
-    font-size: 1.5em;
-    animation: fadeIn 3s ease-in;
+nav ul li {
+    display: inline;
+    margin: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #3a506b;
+    font-weight: bold;
+}
+
+/* Animations */
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in forwards;
 }
 
 @keyframes fadeIn {
@@ -23,25 +43,32 @@ p {
     to { opacity: 1; }
 }
 
+.slide-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: slideIn 1.5s ease-in forwards;
+}
+
 @keyframes slideIn {
-    from { transform: translateY(-50px); opacity: 0; }
-    to { transform: translateY(0); opacity: 1; }
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
-.btn {
-    display: inline-block;
-    background: white;
-    color: #ff7e5f;
-    padding: 15px 30px;
-    font-size: 1.2em;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 20px;
-    transition: 0.3s;
+/* Gerald Site Animation */
+.animated-text {
+    font-size: 30px;
+    font-weight: bold;
+    color: #5bc0be;
+    text-transform: uppercase;
+    animation: textAnimation 3s infinite alternate;
 }
 
-.btn:hover {
-    background: #ff7e5f;
-    color: white;
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+@keyframes textAnimation {
+    from { opacity: 0.5; transform: scale(1); }
+    to { opacity: 1; transform: scale(1.1); }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    body { font-size: 14px; }
 }

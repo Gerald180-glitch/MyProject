@@ -4,10 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-    <h1>About Us</h1>
-    <p>This is a simple Flask web app for CI/CD testing.</p>
-    <a href="/">Back to Home</a>
+    <header>
+        <h1 class="fade-in">About Us</h1>
+    </header>
+    
+    <section class="content">
+        <p class="slide-in">This is where you can learn more about our team and our journey.</p>
+    </section>
+
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li><a href="{{ url_for('about') }}">About Us</a></li>
+            <li><a href="{{ url_for('contact') }}">Contact</a></li>
+        </ul>
+    </nav>
 </body>
 </html>
