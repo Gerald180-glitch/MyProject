@@ -40,7 +40,7 @@ After fixing the API response, all test cases passed successfully.
 
 ✅ **Status:** All tests passed 🎉  
 
-![Pytest Results](screenshots/Pytest_Result_All_Pass.png)  
+![Pytest Results](screenshots/Pytest_Result_All Pass.png)  
 
 ---
 
@@ -49,21 +49,21 @@ Before fixing the API response, the test for `/api/info` was failing because the
 
 ❌ **Error:** Mismatched JSON response.  
 
-![Failed API Test](screenshots/Failed_Test_API.png)  
+![Failed API Test](screenshots/Failed Test_API.png)  
 
 ---
 
 ### **7️⃣ GitHub Actions - Failed API Test Details**  
 When GitHub Actions ran the tests, the API test failed. This screenshot shows the failure details in the GitHub Actions logs.  
 
-![GitHub Actions](screenshots/Github_Actions_Failed_Test_API_detailed_Info.png)  
+![GitHub Actions](screenshots/Github Actions_Failed Test API detailed Info.png)  
 
 ---
 
 ### **8️⃣ GitHub Actions - Running Workflows**  
 This screenshot shows GitHub Actions running the test workflow, ensuring continuous integration (CI) is working.  
 
-![GitHub Actions Running](screenshots/Github_Actions_Running_Workflows.png)  
+![GitHub Actions Running](screenshots/Github Actions_Running Workflows.png)  
 
 ---
 
